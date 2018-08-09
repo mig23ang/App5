@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App5"
+             x:Class="App5.MainPage">
+
+    <StackLayout>
+        <StackLayout Padding="20">
+            <TimePicker TextColor="Navy"
+                        x:Name="timPickInicial">
+            </TimePicker>
+            <WebView x:Name="Browser"
+                     Source="https://university.xamarin.com/"
+                     WidthRequest="1000"
+                     HeightRequest="1000"
+                     Navigated="Handle_Navigated">
+            </WebView>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App5.Page2">
+    <ContentPage.Content>
+        <StackLayout>
+            <BoxView x:Name="boxColor"
+                     BackgroundColor="Black"
+                     HeightRequest="300"></BoxView>
+            <Label Margin="25,30,0,0"
+                   Text="Rojo"></Label>
+            <Slider x:Name="slaRojo"
+                    Margin="15,0,0,0"
+                    ValueChanged="CambiarColor"></Slider>
+            <Label Margin="25,30,0,0"
+                   Text="Azul"></Label>
+            <Slider x:Name="slaAzul"
+                    Margin="15,0,0,0"
+                    ValueChanged="CambiarColor"></Slider>
+            <Label Margin="25,30,0,0"
+                   Text="Verde"></Label>
+            <Slider x:Name="slaVerde"
+                    Margin="15,0,0,0"
+                    ValueChanged="CambiarColor"></Slider>
+            <Label x:Name="lbdDisplay"
+                   Text="Valor"
+                   FontAttributes="Bold"
+                   FontSize="Large"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
